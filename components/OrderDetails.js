@@ -11,18 +11,18 @@ const OrderDetails = () => {
     labels: ['January', 'February', 'March', 'April', 'May', 'June','July', 'August','September'],
     datasets: [
       {
-        label: 'Offline Sales',
-        data: [1200, 1900, 3000, 5000, 2000, 3000,1500, 3500, 8000],
+        label: 'Order',
+        data: [4000, 3500, 3000, 7000, 8000, 9000, 3000, 2000, 6000],
         fill: false,
-        backgroundColor: 'rgb(75, 192, 192)',
-        borderColor: 'rgba(75, 192, 192, 0.2)',
+        backgroundColor: '#580599',
+        borderColor: '#580599',
       },
       {
-        label: 'Online Sales',
-        data: [4000, 5000, 6000, 7000, 8000, 9000, 3000, 7000, 6000],
+        label: 'Downloads',
+        data: [1200, 4000, 2000, 9000, 2000, 3000,1500, 3500, 8000],
         fill: false,
-        backgroundColor: 'rgb(255, 99, 132)',
-        borderColor: 'rgba(255, 99, 132, 0.2)',
+        backgroundColor: '#E66B09',
+        borderColor: '#E66B09'
       },
     ],
   };
