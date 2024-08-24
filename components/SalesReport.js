@@ -50,7 +50,7 @@ const SalesReport = () => {
         <div className="bg-white p-6 rounded-lg shadow">
           <h3 className="text-lg font-medium">Sales Report</h3>
           <p className="mt-4">The total number of sessions within the date range. It is the period time a user is actively engaged with your website, page, or app, etc.</p>
-          <div className="mt-6">
+          <div className="mt-4">
             <Bar data={data} options={options} />
           </div>
         </div>

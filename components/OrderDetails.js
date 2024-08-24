@@ -1,6 +1,31 @@
-import React from 'react'
+"use client"
 
+import React from 'react'
+import { Chart, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend } from 'chart.js';
+import { Line } from 'react-chartjs-2';
+
+// Register components
+Chart.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend);
 const OrderDetails = () => {
+  const data = {
+    labels: ['January', 'February', 'March', 'April', 'May', 'June','July', 'August','September'],
+    datasets: [
+      {
+        label: 'Offline Sales',
+        data: [1200, 1900, 3000, 5000, 2000, 3000,1500, 3500, 8000],
+        fill: false,
+        backgroundColor: 'rgb(75, 192, 192)',
+        borderColor: 'rgba(75, 192, 192, 0.2)',
+      },
+      {
+        label: 'Online Sales',
+        data: [4000, 5000, 6000, 7000, 8000, 9000, 3000, 7000, 6000],
+        fill: false,
+        backgroundColor: 'rgb(255, 99, 132)',
+        borderColor: 'rgba(255, 99, 132, 0.2)',
+      },
+    ],
+  };
     return (
         <div className="bg-white p-6 rounded-lg shadow">
           <h3 className="text-lg font-medium">Order Details</h3>
@@ -23,6 +48,9 @@ const OrderDetails = () => {
               <h4 className="text-3xl text-purple-700 font-bold">34040</h4>
             </div>
           </div>
+            <div className="mt-6">
+              <Line data={data} />
+            </div>
         </div>
       );
 }
