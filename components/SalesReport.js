@@ -45,7 +45,10 @@ const SalesReport = () => {
     
       return (
         <div className="bg-white p-6 rounded-lg shadow">
+          <div className="flex justify-between items-center">
           <h3 className="text-lg font-medium">Sales Report</h3>
+          <button className="bg-transparent text-blue-500 text-lg font-semibold">View all</button>
+          </div>
           <p className="mt-4">The total number of sessions within the date range. It is the period time a user is actively engaged with your website, page, or app, etc.</p>
           <div className="mt-4">
             <Bar data={data} options={options} />
