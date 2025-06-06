@@ -10,7 +10,7 @@ export default function Home() {
      
       <header className="flex justify-between items-center w-full">
         <div>
-          <h2 className="text-2xl font-semibold">Welcome Aamir</h2>
+          <h2 className="text-2xl font-semibold">Welcome Rohit </h2>
           <p>All systems are running smoothly! You have <span className="text-blue-600">3 unread alerts</span>!</p>
         </div>
         <div className="flex items-center bg-white rounded-lg p-2 gap-2">
